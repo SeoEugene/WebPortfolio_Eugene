@@ -318,6 +318,32 @@ body {
     border-radius: 50px;
     background-color: rgba(0, 0, 0, 0.6);
     z-index: 9999;
+    display: flex;
+    justify-content: space-between;
+}
+
+.musicplayer .play,
+.musicplayer .stop,
+.musicplayer .next {
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    border-radius: 50%;
+}
+
+.musicplayer .stop {
+    display: none;
+}
+
+.musicplayer .music {
+    width: 190px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 50px;
+    color: #fdfdfd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
