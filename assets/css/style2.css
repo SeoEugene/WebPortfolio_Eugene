@@ -188,6 +188,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 #main .main-cont .mc-inner .circle-wrap {
@@ -197,18 +198,21 @@ body {
 }
 
 #main .main-cont .mc-inner .circle-wrap .circle1 {
-    width: 34vw;
-    height: 34vw;
-    border: 1px solid #000;
+    width: 30vw;
+    height: 30vw;
+    border: 3px solid #000;
     border-radius: 50%;
     margin-right: -2vw;
     background-color: #F2F0E7;
     position: relative;
 }
 
+
+
+
 #main .main-cont .mc-inner .circle-wrap .circle1 .circle1-1 {
-    width: 30vw;
-    height: 30vw;
+    width: 24vw;
+    height: 24vw;
     border: 1px solid #000;
     border-radius: 50%;
     position: absolute;
@@ -220,40 +224,69 @@ body {
 }
 
 #main .main-cont .mc-inner .circle-wrap .circle1 .circle1-1 .circle1-1-1 {
-    width: 28vw;
-    height: 28vw;
+    width: 23vw;
+    height: 23vw;
     border-radius: 50%;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    overflow: hidden;
 }
 
 #main .main-cont .mc-inner .circle-wrap .circle2 {
-    width: 34vw;
-    height: 34vw;
+    width: 30vw;
+    height: 30vw;
     border: 1px solid #000;
     border-radius: 50%;
     margin-left: -2vw;
     background-color: #F2F0E7;
     position: relative;
+
+}
+
+.circle2_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    width: 30vw;
+    height: 30vw;
+    border: 3px solid #000;
+    background-image: url(../image/circletext.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: rotate 50s linear infinite;
+    transform-origin: 50% 50%;
+}
+
+@keyframes rotate {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
 }
 
 #main .main-cont .mc-inner .circle-wrap .circle2 .circle2-1 {
-    width: 30vw;
-    height: 30vw;
+    width: 24vw;
+    height: 24vw;
     border: 1px solid #000;
     border-radius: 50%;
     position: absolute;
-
+    background-color: #000;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
 }
 
 #main .main-cont .mc-inner .circle-wrap .circle2 .circle2-1 .circle2-1-1 {
-    width: 25vw;
-    height: 25vw;
+    width: 23vw;
+    height: 23vw;
     border: 1px solid #000;
     border-radius: 50%;
     position: absolute;
@@ -271,8 +304,20 @@ body {
     top: 0;
     z-index: 10;
     background-size: cover;
-    background-image: url(https://thisiseugeneportfolio.netlify.app/assets/img/about1.jpg);
+    /* background-image: url(https://thisiseugeneportfolio.netlify.app/assets/img/about1.jpg); */
+    background-image: url(/assets/image/main1.jpg);
     opacity: 0.4;
+}
+
+.musicplayer {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 300px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 9999;
 }
 
 
@@ -295,40 +340,7 @@ body {
     border-left: 1px solid #000;
 }
 
-#main .main-right .mr-inner {
-    padding-top: 70px;
-    height: 100%;
-}
 
-#main .main-right .mr-inner .mr-inner-top {
-    height: 80px;
-    border-bottom: 1px solid #000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #F2F0E7;
-}
-
-#main .main-right .mr-inner .mr-inner-top .title {
-    text-align: center;
-    font-family: "PartizenoRegular";
-    font-size: 40px;
-    line-height: 1;
-}
-
-#main .main-right .mr-inner .mr-inner-top .title span {
-    font-family: 'Cara';
-    display: block;
-    font-size: 20px;
-    line-height: 0.7;
-}
-
-
-#main .main-right .mr-inner .mr-inner-bom {
-    height: calc(100% - 80px);
-    background-color: #f2f0e73d;
-    backdrop-filter: blur(5px);
-}
 
 @media (max-width: 1000px) {
     #main .main-left {
