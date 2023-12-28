@@ -4,7 +4,7 @@ select = e => document.querySelector(e);
 selectAll = e => document.querySelectorAll(e);
 
 const container1_1 = select('.container1_1');
-let wArray = [161, 614, 189, 278, 404],
+let wArray = [600, 600, 600, 278, 404],
     tl;
 
 function animate() {

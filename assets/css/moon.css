@@ -54,9 +54,9 @@ body {
     visibility: hidden;
 }
 
-.circle1-1-1 {
+/* .circle1-1-1 {
     transition: width 0.3s ease, height 0.3s ease;
-}
+} */
 
 .container1_1 .container__base {
     position: absolute;
@@ -87,5 +87,5 @@ body {
 }
 
 .container1_1 .moon__txt-overlay {
-    fill: rgba(0, 0, 0, 0.6);
+    fill: rgba(0, 0, 0, 1);
 }
