@@ -399,3 +399,7 @@ body {
         display: block;
     }
 }
+
+.mc-inner-bottom em {
+    font-family: 'Cara';
+}

@@ -1,172 +1,206 @@
-.about__wrap {
+.about-wrap {
+    display: flex;
     width: 100%;
     height: 100%;
-    display: flex;
-    color: #333;
 }
 
-
-#page {}
-
-#page>div {
-    width: 100%;
-}
-
-bold {
-    width: 100%;
-    /* font-size: 18px; */
-    font-weight: 600;
-    border-bottom: 2px solid #333;
-    display: flex;
-}
-
-.page1 {
-    width: 24%;
-    background-color: #ccc7b2;
-    padding: 30px;
-    box-sizing: border-box;
-}
-
-.page1 bold {
-    /* margin: 3px 0; */
-}
-
-.page1 span {
-    display: block;
-    width: 100%;
-    text-align: right;
-}
-
-.page1 .image {
-    margin-bottom: 25px;
-    padding-bottom: 10px;
-
-}
-
-.page1 .image {
-    width: 250px;
-    height: 250px;
-    background-image: url(../image/main2.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.page1 .profile {
-    font-size: 22px;
-    margin-bottom: 20px;
-}
-
-.page2 {
-    width: 38%;
-    background-color: #F2F0E7;
-    padding: 30px;
-    box-sizing: border-box;
-    border-right: 2px dashed #ccc7b2;
-}
-
-.page2 bold {
-    margin-top: 20px;
-}
-
-.page2>div {
-    margin-bottom: 3px;
-    padding: 0 20px;
-    box-sizing: border-box;
-}
-
-.page2 .education {}
-
-.page2 .courses {
-    text-align: center;
-
-}
-
-.page2 .courses li {
-    display: flex;
-    justify-content: space-around;
-}
-
-.page2 .courses li>div:first-child {
+.about-wrap .about1 {
     width: 30%;
-
+    height: 100%;
+    background-color: #aca4806d;
+    backdrop-filter: blur(10px);
+    border-right: 1px dashed #89846b;
+    box-sizing: border-box;
 }
 
-.page2 .courses li>div:last-child {
-    width: 70%;
-}
-
-.page2 .certificate {
-    text-align: center;
-
-}
-
-.page2 .certificate li {
-    display: flex;
-    justify-content: space-around;
-}
-
-.page2 .certificate li>div:first-child {
-    width: 30%;
-
-}
-
-.page2 .certificate li>div:last-child {
-    width: 70%;
-}
-
-.page2 .tools ul {
+.about-wrap .about1 figure {
     width: 100%;
-    display: flex;
-}
-
-.page2 .tools li {
-    width: 20%;
-    background-size: cover;
-    background-position: center;
-}
-
-.page3 {
-    width: 38%;
-    background-color: #F2F0E7;
+    height: 60%;
     padding: 30px;
-    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
 }
 
-.page3 bold {
-    margin-top: 20px;
+.about-wrap .about1 figure img {
+    background-size: contain;
+    background-position: center;
+    width: 80%;
+    height: 100%;
 }
 
-.page3 h3 {
-    font-weight: 600;
+.about-wrap .about1 .info {
+    padding: 0 30px 30px 30px;
 }
 
-.page3>div {
-    margin-bottom: 3px;
-    padding: 0 20px;
-    box-sizing: border-box;
+.about-wrap .about1 .info h3 {
+    font-family: "PartizenoRegular";
+    font-size: 30px;
 }
 
-.page3 .skill ul {
-    margin-left: 20px;
+.about-wrap .about1 .info h3 em {
+    font-family: 'Cara';
+    font-size: 16px;
 }
 
-.page3 .skill ul li {
-    padding: 1px 3px;
+.about-wrap .about1 .info li {
+    border-bottom: 1px solid #89846b;
+    font-family: 'Abel';
 }
 
-.page3 .skill li>div:first-child {
-    width: 28%;
-}
-
-.page3 .skill li>div:last-child {
-    width: 72%;
-}
-
-.page3 .skill li {
+.about-wrap .about1 .info li {
     display: flex;
     justify-content: space-between;
+    width: 100%;
+    padding: 13px 0 10px 0;
 }
+
+.about-wrap .about1 .info li em {
+    text-transform: capitalize;
+}
+
+.about-wrap .about1 .info li span {
+    font-family: 'IropkeBatang';
+    font-size: 14px;
+    padding-top: 2px;
+    opacity: 0.7;
+}
+
+.about-wrap .about2 {
+    width: 35%;
+    height: 100%;
+    background-color: #F2F0E7;
+    border-right: 1px dashed #89846b;
+}
+
+.about-wrap .about2 .record {
+    padding: 40px;
+}
+
+.about-wrap .about2 .record h3 {
+    font-family: "PartizenoRegular";
+    font-size: 30px;
+}
+
+.about-wrap .about2 .record h3 em {
+    font-family: 'Cara';
+    font-size: 16px;
+}
+
+.about-wrap .about2 .record h4 {
+    font-family: 'Abel';
+    border-bottom: 1px dashed #89846b;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.about-wrap .about2 .record li {
+    font-family: 'IropkeBatang';
+    font-size: 14px;
+    padding-left: 10px;
+    position: relative;
+}
+
+.about-wrap .about2 .record li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 7px;
+    width: 4px;
+    height: 4px;
+    background-color: #000;
+}
+
+.about-wrap .about3 {
+    width: 35%;
+    height: 100%;
+    background-color: #F2F0E7;
+}
+
+.about-wrap .about3 .ability {
+    padding: 40px;
+}
+
+.about-wrap .about3 .ability h3 {
+    font-family: "PartizenoRegular";
+    font-size: 30px;
+}
+
+.about-wrap .about3 .ability h3 em {
+    font-family: 'Cara';
+    font-size: 16px;
+}
+
+.about-wrap .about3 .ability h4 {
+    font-family: 'Abel';
+    border-bottom: 1px dashed #89846b;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.about-wrap .about3 .ability h4 {
+    font-family: 'Abel';
+    border-bottom: 1px dashed #89846b;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.about-wrap .about3 .ability h5 {
+    font-family: 'Abel';
+    margin-bottom: 3px;
+    margin-top: 5px;
+    font-weight: 600;
+}
+
+.about-wrap .about3 .ability li {
+    font-family: 'IropkeBatang';
+    font-size: 14px;
+    padding-left: 10px;
+    position: relative;
+}
+
+.about-wrap .about3 .ability li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 7px;
+    width: 4px;
+    height: 4px;
+    background-color: #000;
+}
+
+.about-wrap .about3 .ability p {
+    font-family: 'IropkeBatang';
+    font-size: 14px;
+    padding-left: 10px;
+    position: relative;
+}
+
+.about-wrap .about3 .ability .skill__box li {
+    display: flex;
+
+}
+
+.about-wrap .about3 .ability .skill__box span {
+    width: 20%;
+}
+
+progress {
+    width: 80%;
+    height: 20px;
+}
+
+/* ProgressBar 안의 바의 색상을 지정합니다. */
+progress::-webkit-progress-value {
+    background: #89846b;
+    /* 바의 색상 (Chrome, Safari) */
+}
+
+progress::-moz-progress-bar {
+    background: #89846b;
+    /* 바의 색상 (Firefox) */
+}
+
+
 
 /* .page3 .skill .skill-progress {
     position: absolute;

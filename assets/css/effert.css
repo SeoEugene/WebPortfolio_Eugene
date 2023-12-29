@@ -18,3 +18,92 @@
 #page1 {
     background-image: url(../image/search.png);
 }
+
+
+
+
+
+
+.port__view {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.port__view .left .frame {
+    width: 30vw;
+    height: 30vw;
+    background-color: #fdfdfd;
+    margin-top: 2vw;
+    display: flex;
+    justify-content: center;
+}
+
+.port__view .left .frame .image {
+    margin-top: 50px;
+    width: 27vw;
+    height: 23vw;
+    background-image: url(../image/FindEnglish\ 1.png);
+}
+
+.port__view .right {
+    width: 35vw;
+    height: 35vw;
+    border: 1px solid #000;
+    background-color: #F2F0E7;
+    margin-left: 2vw;
+    box-shadow: 0px 0px 20px #0000002d;
+}
+
+.port__view .right h3 {
+    border-bottom: 2px double #000;
+    font-family: "PartizenoRegular";
+    text-align: center;
+    line-height: 1;
+    padding: 10px;
+    font-size: 30px;
+}
+
+.port__view .right .desc {
+    padding: 20px;
+    overflow-y: scroll;
+    height: calc(100% - 60px);
+}
+
+.port__view .right span {
+    font-family: "Abel", "IropkeBatang";
+    display: block;
+}
+
+.port__view .right span em {
+    font-weight: bold;
+}
+
+.port__view .right p {
+    margin-top: 5px;
+    font-family: "Abel", "IropkeBatang";
+}
+
+.port__view .right p em {
+    font-weight: bold;
+
+}
+
+.port__view .right .btn {
+    text-align: center;
+}
+
+.port__view .right .btn a {
+    border: 1px double #000;
+    padding: 5px 40px;
+    border-radius: 50px;
+    display: inline-block;
+    background-color: #000;
+    color: #F2F0E7;
+    font-family: 'IropkeBatang';
+    margin-top: 20px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
