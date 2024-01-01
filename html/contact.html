@@ -46,7 +46,16 @@
                                     <!-- <li><a href="../html/portfoliomore7.html">g. Shaking carrots</a></li> -->
                                 </ul>
                             </li>
-                            <li><a href="../html/effert.html">3. My Effect</a></li>
+                            <li><a href="../html/effert.html">3. My Effect</a>
+                                <ul>
+                                    <li><a href="../html/effert1.html">a. Search</a></li>
+                                    <li><a href="../html/effert2.html">b. Animation</a></li>
+                                    <li><a href="../html/effert3.html">c. Data request</a></li>
+                                    <li><a href="../html/effert4.html">d. Join and Login</a></li>
+                                    <li><a href="../html/effert5.html">e. Board</a></li>
+                                    <li><a href="../html/effert5.html">f. Comment</a></li>
+                                </ul>
+                            </li>
                             <li><a href="../html/about.html">4. About Me</a>
                                 <!-- <ul>
                                     <li><a href="../html/aboutme.htm#Iml">a. I'm</a></li>
@@ -64,7 +73,7 @@
         <div class="main-cont">
             <div class="mc-inner">
                 <div class="mc-inner-top">
-                    <h2><span>I</span>contact</h2>
+                    <h2><span>r</span>contact</h2>
                 </div>
                 <div class="mc-inner-center">
                     <div class="contact__wrap">
@@ -130,29 +139,6 @@
     <script src="https://unpkg.com/split-type"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js'></script>
     <script src="./script.js"></script>
-    <script>
-        document.querySelector(".circle1-1-1").addEventListener("mouseover", () => {
-            document.querySelector(".circle1-1-1").style.width = "30vw";
-            document.querySelector(".circle1-1-1").style.height = "30vw";
-            document.querySelector(".circle1-1-1").style.border = "3px solid #000";
-        })
-        document.querySelector(".circle1-1-1").addEventListener("mouseout", () => {
-            document.querySelector(".circle1-1-1").style.width = "24vw";
-            document.querySelector(".circle1-1-1").style.height = "24vw";
-            document.querySelector(".circle1-1-1").style.border = "none";
-
-        })
-        const cImgElement = document.querySelector(".cImg");
-        const canvas = document.querySelector("#canvas");
-
-        canvas.addEventListener("mouseover", () => {
-            cImgElement.src = "/assets/image/main2.png";
-        });
-
-        canvas.addEventListener("mouseout", () => {
-            cImgElement.src = "/assets/image/main1.jpg";
-        });
-    </script>
     <script>
         let isLeftPanelVisible = false;
         let isRightPanelVisible = false;

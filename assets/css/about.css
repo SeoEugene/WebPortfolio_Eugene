@@ -1,12 +1,33 @@
 .about-wrap {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     height: 100%;
+    overflow-y: scroll;
+}
+
+.about-wrap::-webkit-scrollbar {
+    width: 0px;
+}
+
+.about-wrap h1 {
+    font-family: "PartizenoRegular";
+    font-size: 35px;
+    width: 100%;
+    background-color: #aca4806d;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px dashed #89846b;
+    text-align: center;
+}
+
+.about-wrap h1 em {
+    font-family: 'Cara';
+    font-size: 16px;
 }
 
 .about-wrap .about1 {
     width: 30%;
-    height: 100%;
+    height: auto;
     background-color: #aca4806d;
     backdrop-filter: blur(10px);
     border-right: 1px dashed #89846b;
@@ -15,7 +36,7 @@
 
 .about-wrap .about1 figure {
     width: 100%;
-    height: 60%;
+    height: 55%;
     padding: 30px;
     display: flex;
     justify-content: center;
@@ -67,7 +88,7 @@
 
 .about-wrap .about2 {
     width: 35%;
-    height: 100%;
+    height: auto;
     background-color: #F2F0E7;
     border-right: 1px dashed #89846b;
 }
@@ -112,7 +133,7 @@
 
 .about-wrap .about3 {
     width: 35%;
-    height: 100%;
+    height: auto;
     background-color: #F2F0E7;
 }
 

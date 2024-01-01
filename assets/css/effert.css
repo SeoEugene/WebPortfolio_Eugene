@@ -1,109 +1,235 @@
+.alleffert__wrap {
+    width: 100%;
+    height: 100%;
+    background-color: #F2F0E7;
+    /* margin: 0 10px; */
+    /* margin-top: 30px; */
+    overflow-y: scroll;
+    box-sizing: border-box;
+}
+
+.alleffert__wrap::-webkit-scrollbar {
+    width: 0px;
+}
+
+.alleffert__wrap h1 {
+    text-align: center;
+    font-family: "PartizenoRegular";
+    font-size: 50px;
+    /* font-weight: 600; */
+    margin-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #000;
+
+}
+
+.alleffert__wrap .page {
+    display: flex;
+    border-bottom: 1px solid #000;
+    padding: 50px 10px;
+}
+
+.alleffert__wrap .page .left {
+    width: 40%;
+}
+
+.alleffert__wrap .page .left .image {
+    width: 80%;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+.alleffert__wrap .left .image1 {
+    background-image: url(../image/search.png);
+}
+
+.alleffert__wrap .left .image2 {
+    background-image: url(../image/search.png);
+}
+
+.alleffert__wrap .left .image3 {
+    background-image: url(../image/join.jpg);
+}
+
+.alleffert__wrap .left .image4 {
+    background-image: url(../image/join.jpg);
+}
+
+.alleffert__wrap .left .image5 {
+    background-image: url(../image/board.jpg);
+}
+
+.alleffert__wrap .left .image6 {
+    background-image: url(../image/comment.jpg);
+}
+
+.alleffert__wrap .page .right {
+    width: 60%;
+}
+
+.alleffert__wrap .page .right .title {
+    font-family: "PartizenoRegular";
+    font-size: 30px
+}
+
+.alleffert__wrap .page .right .desc {}
+
+/* effert more */
 .effert__wrap {
     width: 100%;
     height: 100%;
     overflow-y: scroll;
-
-    /* transition: transform 5s ease; */
+    box-sizing: border-box;
 }
 
-.effert__wrap .page {
-    width: 100%;
-    height: 100%;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    filter: blur(2px) grayscale(20%);
+.effert__wrap::-webkit-scrollbar {
+    width: 0px;
 }
 
-#page1 {
-    background-image: url(../image/search.png);
+.effert__wrap .contents {
+    width: calc(100%-40px);
+    height: 50px;
+    margin: 0 20px;
+    margin-top: 50px;
+    margin-left: 50px;
+    display: flex;
+    z-index: 9960;
+
 }
 
-
-
-
-
-
-.port__view {
+.effert__wrap .contents li {
+    width: 200px;
+    padding: 10px 20px;
+    border: 1px solid #000;
+    background-color: #F2F0E7;
+    text-align: center;
+    font-family: "PartizenoRegular";
+    font-size: 18px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100%;
 }
 
-.port__view .left .frame {
-    width: 30vw;
-    height: 30vw;
-    background-color: #fdfdfd;
-    margin-top: 2vw;
-    display: flex;
-    justify-content: center;
+.effert__wrap .contents li.active {
+    border-bottom: 3px solid #F2F0E7;
 }
 
-.port__view .left .frame .image {
-    margin-top: 50px;
-    width: 27vw;
-    height: 23vw;
-    background-image: url(../image/FindEnglish\ 1.png);
-}
 
-.port__view .right {
-    width: 35vw;
-    height: 35vw;
+.effert__wrap .file {
+    width: calc(100%-40px);
+    height: 80%;
+    padding: 20px;
+    margin: -1px 20px 20px 20px;
     border: 1px solid #000;
     background-color: #F2F0E7;
-    margin-left: 2vw;
-    box-shadow: 0px 0px 20px #0000002d;
+    z-index: 9950;
 }
 
-.port__view .right h3 {
-    border-bottom: 2px double #000;
+.effert__wrap .file .title {
+    font-size: 2vw;
     font-family: "PartizenoRegular";
-    text-align: center;
-    line-height: 1;
-    padding: 10px;
-    font-size: 30px;
+    border-bottom: 1px solid #000;
+    padding-left: 20px;
 }
 
-.port__view .right .desc {
-    padding: 20px;
-    overflow-y: scroll;
-    height: calc(100% - 60px);
+.effert__wrap .file .title span {
+    font-family: 'Cara';
 }
 
-.port__view .right span {
-    font-family: "Abel", "IropkeBatang";
-    display: block;
-}
-
-.port__view .right span em {
-    font-weight: bold;
-}
-
-.port__view .right p {
-    margin-top: 5px;
-    font-family: "Abel", "IropkeBatang";
-}
-
-.port__view .right p em {
-    font-weight: bold;
-
-}
-
-.port__view .right .btn {
-    text-align: center;
-}
-
-.port__view .right .btn a {
-    border: 1px double #000;
-    padding: 5px 40px;
-    border-radius: 50px;
-    display: inline-block;
-    background-color: #000;
-    color: #F2F0E7;
-    font-family: 'IropkeBatang';
+.effert__wrap .file .card {
+    display: flex;
     margin-top: 20px;
-    margin-bottom: 30px;
-    cursor: pointer;
+}
+
+.effert__wrap .file .card1 {
+    width: 30%;
+    height: 300px;
+    margin: 20px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+
+}
+
+.effert__wrap .file .card1-1 {
+    background-image: url(../image/search.png);
+}
+
+.effert__wrap .file .card1-2 {
+    background-image: url(../image/animation.png);
+}
+
+.effert__wrap .file .card1-3 {
+    background-image: url(../image/data.png);
+}
+
+.effert__wrap .file .card1-4 {
+    background-image: url(../image/join.jpg);
+}
+
+.effert__wrap .file .card1-5 {
+    background-image: url(../image/board.jpg);
+}
+
+.effert__wrap .file .card1-6 {
+    background-image: url(../image/comment.jpg);
+}
+
+.effert__wrap .file .card2 {
+    width: 70%;
+    padding: 20px;
+    border-left: 1px solid #000;
+    margin-bottom: 20px;
+
+}
+
+.effert__wrap .file .card2 h3 {
+    font-family: "PartizenoRegular";
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 25px;
+}
+
+.effert__wrap .file .card2 .desc {
+    padding: 5px;
+    font-size: 1vw;
+    font-family: 'IropkeBatang';
+    line-height: 1.8;
+}
+
+.effert__wrap .file .card2 .stack {
+    display: flex;
+}
+
+.effert__wrap .file .card2 .stack img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+}
+
+.effert__wrap .file .card2 .stack span {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.effert__wrap .file .card2 .btn {
+    padding: 10px 20px;
+    text-align: center;
+    font-family: 'IropkeBatang';
+
+    /* position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%); */
+}
+
+.effert__wrap .file .card2 .btn a {
+    padding: 5px 8px;
+    border: 2px solid #000;
+    font-size: 1vw;
 }

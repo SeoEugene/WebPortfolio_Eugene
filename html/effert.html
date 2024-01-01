@@ -46,7 +46,16 @@
                                     <!-- <li><a href="../html/portfoliomore7.html">g. Shaking carrots</a></li> -->
                                 </ul>
                             </li>
-                            <li><a href="../html/effert.html">3. My Effect</a></li>
+                            <li><a href="../html/effert.html">3. My Effect</a>
+                                <ul>
+                                    <li><a href="../html/effert1.html">a. Search</a></li>
+                                    <li><a href="../html/effert2.html">b. Animation</a></li>
+                                    <li><a href="../html/effert3.html">c. Data request</a></li>
+                                    <li><a href="../html/effert4.html">d. Join and Login</a></li>
+                                    <li><a href="../html/effert5.html">e. Board</a></li>
+                                    <li><a href="../html/effert5.html">f. Comment</a></li>
+                                </ul>
+                            </li>
                             <li><a href="../html/about.html">4. About Me</a>
                                 <!-- <ul>
                                     <li><a href="../html/aboutme.htm#Iml">a. I'm</a></li>
@@ -64,27 +73,86 @@
         <div class="main-cont">
             <div class="mc-inner">
                 <div class="mc-inner-top">
-                    <h2><span>I</span>effert</h2>
+                    <h2><span>r</span>effert</h2>
                 </div>
                 <div class="mc-inner-center">
-                    <div class="effert__wrap">
-                        <div class="page" id="page1">
-                            <div>
-                                <bold>I</bold>검색 기능
+                    <div class="alleffert__wrap">
+                        <h1>My Effert</h1>
+                        <div class="page__wrap">
+                            <div class="page" id="page1">
+                                <div class="left">
+                                    <div class="image image1"></div>
+                                </div>
+                                <div class="right">
+                                    <div class="title">I. Search</div>
+                                    <div class="desc">
+                                        기본적인 javascript의 문자열 함수를 이용해 활용할 수 있는 검색기능 구현<br />
+                                    </div>
+                                </div>
                             </div>
+
+                            <div class="page" id="page2">
+                                <div class="left">
+                                    <div class="image image2"></div>
+                                </div>
+                                <div class="right">
+                                    <div class="title">II. Animation</div>
+                                    <div class="desc">
+                                        기본적인 javascript의 문자열 함수를 이용해 활용할 수 있는 검색기능 구현<br />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="page" id="page3">
+                                <div class="left">
+                                    <div class="image image3"></div>
+                                </div>
+                                <div class="right">
+                                    <div class="title">III. Data request</div>
+                                    <div class="desc">
+                                        기본적인 javascript의 문자열 함수를 이용해 활용할 수 있는 검색기능 구현<br />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="page" id="page4">
+                                <div class="left">
+                                    <div class="image image4"></div>
+                                </div>
+                                <div class="right">
+                                    <div class="title">IV. Join and Login</div>
+                                    <div class="desc">
+                                        기본적인 javascript의 문자열 함수를 이용해 활용할 수 있는 검색기능 구현<br />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="page" id="page5">
+                                <div class="left">
+                                    <div class="image image5"></div>
+                                </div>
+                                <div class="right">
+                                    <div class="title">V. Board</div>
+                                    <div class="desc">
+                                        기본적인 javascript의 문자열 함수를 이용해 활용할 수 있는 검색기능 구현<br />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="page" id="page6">
+                                <div class="left">
+                                    <div class="image image6"></div>
+                                </div>
+                                <div class="right">
+                                    <div class="title">VI. Comment</div>
+                                    <div class="desc">
+                                        기본적인 javascript의 문자열 함수를 이용해 활용할 수 있는 검색기능 구현<br />
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
-
-                        <div class="page" id="page2">
-
-                        </div>
-
-                        <div class="page" id="page3">
-
-                        </div>
-
-                        <div class="page" id="page4">
-
-                        </div>
+                        <!-- page__wrap -->
 
 
                         <!-- 
@@ -148,29 +216,6 @@
     <script src="https://unpkg.com/split-type"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js'></script>
     <script src="./script.js"></script>
-    <script>
-        document.querySelector(".circle1-1-1").addEventListener("mouseover", () => {
-            document.querySelector(".circle1-1-1").style.width = "30vw";
-            document.querySelector(".circle1-1-1").style.height = "30vw";
-            document.querySelector(".circle1-1-1").style.border = "3px solid #000";
-        })
-        document.querySelector(".circle1-1-1").addEventListener("mouseout", () => {
-            document.querySelector(".circle1-1-1").style.width = "24vw";
-            document.querySelector(".circle1-1-1").style.height = "24vw";
-            document.querySelector(".circle1-1-1").style.border = "none";
-
-        })
-        const cImgElement = document.querySelector(".cImg");
-        const canvas = document.querySelector("#canvas");
-
-        canvas.addEventListener("mouseover", () => {
-            cImgElement.src = "/assets/image/main2.png";
-        });
-
-        canvas.addEventListener("mouseout", () => {
-            cImgElement.src = "/assets/image/main1.jpg";
-        });
-    </script>
     <script>
         let isLeftPanelVisible = false;
         let isRightPanelVisible = false;
