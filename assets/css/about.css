@@ -1,59 +1,34 @@
 .about-wrap {
     display: flex;
-    flex-wrap: wrap;
     width: 100%;
     height: 100%;
-    overflow-y: scroll;
-}
-
-.about-wrap::-webkit-scrollbar {
-    width: 0px;
-}
-
-.about-wrap h1 {
-    font-family: "PartizenoRegular";
-    font-size: 35px;
-    width: 100%;
-    background-color: #aca4806d;
-    backdrop-filter: blur(10px);
-    border-bottom: 1px dashed #89846b;
-    text-align: center;
-}
-
-.about-wrap h1 em {
-    font-family: 'Cara';
-    font-size: 16px;
+    overflow: hidden;
 }
 
 .about-wrap .about1 {
     width: 30%;
-    height: auto;
+    height: 100%;
     background-color: #aca4806d;
     backdrop-filter: blur(10px);
     border-right: 1px dashed #89846b;
-    box-sizing: border-box;
+    overflow-y: scroll;
+}
+
+.about-wrap .about1::-webkit-scrollbar {
+    width: 5px;
+}
+
+.about-wrap .about1::-webkit-scrollbar-track {
+    background-color: #aca4806d;
+}
+
+.about-wrap .about1::-webkit-scrollbar-thumb {
+    background-color: #F2F0E7;
+    border-radius: 6px;
 }
 
 .about-wrap .about1 figure {
-    width: 23vw;
-    height: 23vw;
-    padding: 1vw;
-    display: flex;
-    justify-content: center;
-}
-
-@media (max-width: 1000px) {
-    .about-wrap .about1 figure {
-        width: 30vw;
-        height: 30vw;
-    }
-}
-
-.about-wrap .about1 figure img {
-    background-size: contain;
-    background-position: center;
-    width: 80%;
-    height: 100%;
+    padding: 30px;
 }
 
 .about-wrap .about1 .info {
@@ -95,105 +70,59 @@
 
 .about-wrap .about2 {
     width: 35%;
-    height: auto;
+    height: 100%;
+    overflow-y: scroll;
+
     background-color: #F2F0E7;
     border-right: 1px dashed #89846b;
 }
 
-.about-wrap .about2 .record {
-    padding: 40px;
+.about-wrap .about2::-webkit-scrollbar {
+    width: 5px;
 }
 
-.about-wrap .about2 .record h3 {
-    font-family: "PartizenoRegular";
-    font-size: 30px;
-}
-
-.about-wrap .about2 .record h3 em {
-    font-family: 'Cara';
-    font-size: 16px;
-}
-
-.about-wrap .about2 .record h4 {
-    font-family: 'Abel';
-    border-bottom: 1px dashed #89846b;
-    margin-bottom: 10px;
-    margin-top: 20px;
-}
-
-.about-wrap .about2 .record li {
-    font-family: 'IropkeBatang';
-    font-size: 14px;
-    padding-left: 10px;
-    position: relative;
-}
-
-.about-wrap .about2 .record li::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 7px;
-    width: 4px;
-    height: 4px;
-    background-color: #000;
-}
-
-.about-wrap .about2 .tool__box {}
-
-.about-wrap .about2 .tool__box img {
-    width: 2vw;
-    height: 2vw;
-}
-
-.about-wrap .about3 {
-    width: 35%;
-    height: auto;
+.about-wrap .about2::-webkit-scrollbar-track {
     background-color: #F2F0E7;
 }
 
-.about-wrap .about3 .ability {
+.about-wrap .about2::-webkit-scrollbar-thumb {
+    background-color: #aca4806d;
+    border-radius: 6px;
+}
+
+.about-wrap .about2.noline {
+    border-right: 0;
+}
+
+.about-wrap .about2 .info {
     padding: 40px;
 }
 
-.about-wrap .about3 .ability h3 {
+.about-wrap .about2 .info h3 {
     font-family: "PartizenoRegular";
     font-size: 30px;
 }
 
-.about-wrap .about3 .ability h3 em {
+.about-wrap .about2 .info h3 em {
     font-family: 'Cara';
     font-size: 16px;
 }
 
-.about-wrap .about3 .ability h4 {
+.about-wrap .about2 .info h4 {
     font-family: 'Abel';
     border-bottom: 1px dashed #89846b;
     margin-bottom: 10px;
     margin-top: 20px;
 }
 
-.about-wrap .about3 .ability h4 {
-    font-family: 'Abel';
-    border-bottom: 1px dashed #89846b;
-    margin-bottom: 10px;
-    margin-top: 20px;
-}
-
-.about-wrap .about3 .ability h5 {
-    font-family: 'Abel';
-    margin-bottom: 3px;
-    margin-top: 5px;
-    font-weight: 600;
-}
-
-.about-wrap .about3 .ability li {
+.about-wrap .about2 .info li {
     font-family: 'IropkeBatang';
     font-size: 14px;
     padding-left: 10px;
     position: relative;
 }
 
-.about-wrap .about3 .ability li::before {
+.about-wrap .about2 .info li::before {
     content: '';
     position: absolute;
     left: 0;
@@ -203,71 +132,68 @@
     background-color: #000;
 }
 
-.about-wrap .about3 .ability p {
-    font-family: 'IropkeBatang';
-    font-size: 14px;
-    padding-left: 10px;
+.about-wrap .about2 .info .tool span img {
+    width: auto;
+}
+
+.about-wrap .about2 .info .skill {}
+
+.about-wrap .about2 .info .skill li {
+    padding-left: 0;
+}
+
+.about-wrap .about2 .info .skill li::before {
+    width: 0;
+    height: 0;
+}
+
+.about-wrap .about2 .info .skill li {
+    display: flex;
+    align-items: center;
+}
+
+.about-wrap .about2 .info .skill li em {
+    width: 80px;
+}
+
+.about-wrap .about2 .info .skill li span {
+    width: calc(100% - 80px);
+    height: 10px;
+    background-color: transparent;
+    border: 1px solid #89846b;
+    display: inline-block;
+    border-radius: 30px;
     position: relative;
 }
 
-.about-wrap .about3 .ability .skill__box li {
-    display: flex;
-
-}
-
-.about-wrap .about3 .ability .skill__box span {
-    width: 20%;
-}
-
-progress {
-    width: 80%;
-    height: 20px;
-}
-
-/* ProgressBar 안의 바의 색상을 지정합니다. */
-progress::-webkit-progress-value {
-    background: #89846b;
-    /* 바의 색상 (Chrome, Safari) */
-}
-
-progress::-moz-progress-bar {
-    background: #89846b;
-    /* 바의 색상 (Firefox) */
-}
-
-
-
-/* .page3 .skill .skill-progress {
+.about-wrap .about2 .info .skill li span::before {
+    content: '';
+    height: 100%;
+    background-color: #89846b;
     position: absolute;
-    top: 0;
     left: 0;
+    top: 0;
+    border-radius: 30px;
+}
+
+.about-wrap .about2 .info .skill li span.s70::before {
+    width: 70%;
+}
+
+.about-wrap .about2 .info .skill li span.s80::before {
+    width: 80%;
+}
+
+.about-wrap .about2 .info .skill li span.s90::before {
+    width: 90%;
+}
+
+.about-wrap .about2 .info .skill li span.s100::before {
     width: 100%;
-    height: 100%;
-    background-color: #e0e0e0;
-
-border-radius: 50%;
-clip: rect(0, 50%, 100%, 0);
-
-transform-origin: center;
 }
 
-*/
-
-.skill-bar {
-    width: 300px;
-    /* 막대 바의 전체 너비 */
-    height: 20px;
-    /* 막대 바의 높이 */
-    background-color: #e0e0e0;
-    /* 막대 바의 기본 배경색 */
-    border-radius: 10px;
-    /* 막대 바의 모서리를 둥글게 설정 */
-    overflow: hidden;
-    /* 막대 바의 넘치는 부분을 숨김 */
-}
-
-.skill-progress {
-    height: 100%;
-    background-color: #ccc7b2;
-    /* 스킬과 역량을 표시하는 막대의 배경색 */
+.about-wrap .about2 .info p {
+    font-family: 'IropkeBatang';
+    margin-bottom: 10px;
+    font-size: 14px;
 }
