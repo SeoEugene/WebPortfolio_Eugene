@@ -96,7 +96,6 @@
     margin-left: 61px;
     display: flex;
     z-index: 9960;
-
 }
 
 .effert__wrap .contents li {
@@ -112,6 +111,12 @@
     align-items: center;
     margin-left: -1px;
 
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
 }
 
 .effert__wrap .contents li.active {
@@ -121,7 +126,6 @@
 
 .effert__wrap .file {
     width: calc(100%-40px);
-    height: 80%;
     padding: 40px;
     margin: -1px 60px 60px 60px;
     border: 1px solid #000;
@@ -134,7 +138,7 @@
     width: 100%;
     border-bottom: 1px solid #000;
     font-family: "PartizenoRegular";
-    padding-left: 20px;
+    padding: 0 20px;
 }
 
 .effert__wrap .file h1 span {
@@ -161,12 +165,14 @@
 
 .effert__wrap .file .card1 {
     width: 40%;
-    margin: 20px;
+    /* margin: 20px; */
     margin-bottom: 20px;
     padding: 20px;
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
+    position: relative;
+    box-sizing: border-box;
 }
 
 .effert__wrap .file .card2 {
@@ -174,7 +180,11 @@
     padding: 20px;
     border-left: 1px solid #000;
     margin-bottom: 20px;
-    position: relative;
+    /* position: relative; */
+}
+
+.effert__wrap .file .card2 span {
+    font-family: 'Cara';
 
 }
 
@@ -202,18 +212,34 @@
 }
 
 .effert__wrap .file .card2 .btn {
-    padding: 10px 20px;
     text-align: center;
     font-family: 'IropkeBatang';
-
-    position: absolute;
-    left: 50%;
-    bottom: 10px;
-    transform: translateX(-50%);
+    margin-top: 5%;
 }
 
 .effert__wrap .file .card2 .btn a {
-    padding: 5px 8px;
+    border: 1px double #000;
+    padding: 10px 40px;
+    display: inline-block;
     background-color: #000;
-    color: #fdfdfd;
+    color: #F2F0E7;
+    font-family: 'IropkeBatang';
+    cursor: pointer;
+}
+
+@media (max-width:1600px) {
+    .effert__wrap .file .card {
+        display: block;
+    }
+
+    .effert__wrap .file .card1 {
+        width: 100%;
+        padding: 0;
+    }
+
+    .effert__wrap .file .card2 {
+        width: 100%;
+        border-left: none;
+        border-top: 1px solid #000;
+    }
 }
